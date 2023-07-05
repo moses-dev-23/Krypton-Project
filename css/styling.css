@@ -1,0 +1,48 @@
+body {
+    background-color: rgb(154, 187, 154);
+
+}
+
+.letter {
+      display: inline-block;
+      padding: 5px;
+      border: 1px solid #000;
+      margin-right: 5px;
+      margin-top: 20px;
+      cursor: pointer;
+      
+    }
+
+.hiddenWord {
+        display: grid;
+        grid-template-areas: 
+        "letter-g letter-r letter-a letter-v"
+        ;
+        width: 400px;
+        height: 40px;
+        background-color: rgb(60, 89, 62);
+        position: fixed;
+        bottom: 25px;
+        right: 50px;
+        
+        
+        
+        color: aliceblue;
+        font-size: 25px;
+        text-align: center;
+    }
+    
+    .letter-g {
+        grid-area: letter-g;
+        
+    }
+    .letter-r {
+        grid-area: letter-r;
+    }
+    .letter-a {
+        grid-area: letter-a;
+    }
+    .letter-v {
+        grid-area: letter-v;
+    }
+    
