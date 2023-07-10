@@ -2,47 +2,115 @@ body {
     background-color: rgb(154, 187, 154);
 
 }
-
+/* Library of letters*/
 .letter {
-      display: inline-block;
+      display: grid;
+      grid-template-areas: 
+      "button-a button-b"
+      "button-g button-c" ;
+    
       padding: 5px;
       border: 1px solid #000;
       margin-right: 5px;
-      margin-top: 20px;
+      margin-top: 0px;
+
       cursor: pointer;
       
     }
-
+/* Each letter button found in the library*/
+   #button-a {
+    background-color: aqua;
+   } 
+   #button-b {
+    background-color: aqua;
+   } 
+   #button-g {
+    background-color: aqua;
+   } 
+   #button-e {
+    background-color: aqua;
+   }
+   #button-r {
+    background-color: aqua;
+   }
+   #button-v {
+    background-color: aqua;
+   }
+   #button-f {
+    background-color: aqua;
+   }
+   #button-i {
+    background-color: aqua;
+   }
+   #button-h {
+    background-color: aqua;
+   }
+   #button-t {
+    background-color: aqua;
+   }
+   #button-k {
+    background-color: aqua;
+   }
+   #button-y {
+    background-color: aqua;
+   }
+/* Hidden word*/
 .hiddenWord {
         display: grid;
         grid-template-areas: 
-        "letter-g letter-r letter-a letter-v"
-        ;
-        width: 400px;
+        "letter-g letter-r letter-a letter-v letter-i letter-t letter-y";
+        width: 500px;
         height: 40px;
-        background-color: rgb(60, 89, 62);
         position: fixed;
         bottom: 25px;
         right: 50px;
-        
-        
-        
-        color: aliceblue;
+        gap: 5px;
+        color: white;
         font-size: 25px;
         text-align: center;
     }
     
     .letter-g {
         grid-area: letter-g;
-        
+        background-color: rgb(60, 89, 62);
+        border-style: outset;
+        visibility:hidden ;
     }
     .letter-r {
         grid-area: letter-r;
+        background-color: rgb(60, 89, 62);
+        border-style: outset;
+        visibility: hidden
     }
     .letter-a {
         grid-area: letter-a;
+        background-color: rgb(60, 89, 62);
+        border-style: outset;
+        visibility: hidden
     }
     .letter-v {
         grid-area: letter-v;
+        background-color: rgb(60, 89, 62);
+        border-style: outset;
+        visibility: hidden
     }
+    .letter-i {
+        grid-area: letter-i;
+        background-color: rgb(60, 89, 62);
+        border-style: outset;
+        visibility: hidden
+    }
+    .letter-t {
+        grid-area: letter-t;
+        background-color: rgb(60, 89, 62);
+        border-style: outset;
+        visibility: hidden
+    }
+    .letter-y {
+        grid-area: letter-y;
+        background-color: rgb(60, 89, 62);
+        border-style: outset;
+        visibility: hidden
+    }
+    
     
