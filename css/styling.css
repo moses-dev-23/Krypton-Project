@@ -1,22 +1,54 @@
 body {
     background-color: rgb(154, 187, 154);
+}
+
+/*Setting up grid*/
+.Container {
+    background-color: rgb(123, 224, 224);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    
 
 }
-/* Library of letters*/
-.letter {
-      display: grid;
-      grid-template-areas: 
-      "button-a button-b"
-      "button-g button-c" ;
-    
-      padding: 5px;
-      border: 1px solid #000;
-      margin-right: 5px;
-      margin-top: 0px;
 
+/*Organizing elements within grid*/
+.Rocket {
+    background-color: rgb(200, 99, 99);
+
+    grid-column: 2;
+    grid-row: 1;
+    border: solid rgb(176, 157, 15);
+    height: 400px;
+}
+.hiddenWord {
+    background-color: rgb(200, 170, 99); 
+
+    grid-column: 2;
+    grid-row: 2;
+    border: solid black;
+    
+}
+
+.Library { /*The container called Library holding all the buttons*/
+    background-color: blueviolet;
+
+    grid-column: 1;
+    grid-row: 1 / span 2;
+
+
+}
+
+
+/* All buttons*/
+.letter {
+      padding: 10px;
+      gap: 5px;
       cursor: pointer;
       
+      
     }
+    
 /* Each letter button found in the library*/
    #button-a {
     background-color: aqua;
@@ -54,20 +86,24 @@ body {
    #button-y {
     background-color: aqua;
    }
+
 /* Hidden word*/
 .hiddenWord {
         display: grid;
         grid-template-areas: 
         "letter-g letter-r letter-a letter-v letter-i letter-t letter-y";
-        width: 500px;
+        width: auto;
         height: 40px;
-        position: fixed;
+        /* Positioning outside the container
+        position:fixed;
         bottom: 25px;
         right: 50px;
+        */
         gap: 5px;
         color: white;
         font-size: 25px;
         text-align: center;
+
     }
     
     .letter-g {
@@ -112,5 +148,4 @@ body {
         border-style: outset;
         visibility: hidden
     }
-    
     

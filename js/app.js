@@ -3,7 +3,7 @@
 //LOOPING METHOD
 
 // Array to hold hidden word letters
-let hiddenWord = ["g","r","a","v","i","t","y"];
+let hiddenWord = ["g","r","a","v","i","t","y"];        
 
 // Empty array to store clicked letters. 
 let selectedLetters = [];
@@ -78,15 +78,20 @@ function compareLetters(sLetters, hWord) {
             yButton.setAttribute("disabled", "");
         }
     } else if (sLetters[i] === "b" ) {
-        bButton.setAttribute("disabled", "");
+        bButton.setAttribute("disabled", "")
+        bButton.style.backgroundColor = 'grey';
     } else if (sLetters[i] === "e" ) {
-        eButton.setAttribute("disabled", "");
+        eButton.setAttribute("disabled", "")
+        eButton.style.backgroundColor = 'grey';
     } else if (sLetters[i] === "f" ) {
-        fButton.setAttribute("disabled", "");
+        fButton.setAttribute("disabled", "")
+        fButton.style.backgroundColor = 'grey';
     } else if (sLetters[i] === "h" ) {
-        hButton.setAttribute("disabled", "");
+        hButton.setAttribute("disabled", "")
+        hButton.style.backgroundColor = 'grey';
     } else if (sLetters[i] === "k" ) {
-        kButton.setAttribute("disabled", "");
+        kButton.setAttribute("disabled", "")
+        kButton.style.backgroundColor = 'grey';
     } 
 
    }
