@@ -8,12 +8,11 @@ body {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: auto;
-    
 
 }
 
 /*Organizing elements within grid*/
-.Rocket {
+.staging-area {
     background-color: rgb(200, 99, 99);
 
     grid-column: 2;
@@ -26,8 +25,7 @@ body {
 
     grid-column: 2;
     grid-row: 2;
-    border: solid black;
-    
+    border: solid black;  
 }
 
 .Library { /*The container called Library holding all the buttons*/
@@ -35,8 +33,6 @@ body {
 
     grid-column: 1;
     grid-row: 1 / span 2;
-
-
 }
 
 
@@ -149,3 +145,15 @@ body {
         visibility: hidden
     }
     
+/*Pieces of the rocket*/
+
+.mainBody {
+    
+    position: relative;
+    width: 75px;
+    height: 200px;
+    top: 80px;
+    left: 295px;
+    background: linear-gradient(to right, rgb(48, 46, 41), rgb(112, 92, 92));
+      
+}
