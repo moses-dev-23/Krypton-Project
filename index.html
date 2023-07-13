@@ -10,9 +10,9 @@
 <body>
 
 <div class="Container">
-
-     <div class="Library"> 
-            <div> 
+    
+    
+     <div class="Library">   
                 <button class="letter" id="button-a">a</button>
                 <button class="letter" id="button-b">b</button>
                 <button class="letter" id="button-g">g</button>
@@ -25,38 +25,51 @@
                 <button class="letter" id="button-t">t</button>
                 <button class="letter" id="button-k">k</button>
                 <button class="letter" id="button-y">y</button>
-            </div>
+                
+                
+                
 
     </div>
     
         <div class="hiddenWord"> 
-            <div class = "letter-g">g</div>
-            <div class = "letter-r">r</div>
-            <div class = "letter-a">a</div>
-            <div class = "letter-v">v</div>
-            <div class = "letter-i">i</div>
-            <div class = "letter-t">t</div>
-            <div class = "letter-y">y</div>
+            <div class = "letter-g" id="hiddenLetters">g</div>
+            <div class = "letter-r" id="hiddenLetters">r</div>
+            <div class = "letter-a" id="hiddenLetters">a</div>
+            <div class = "letter-v" id="hiddenLetters">v</div>
+            <div class = "letter-i" id="hiddenLetters">i</div>
+            <div class = "letter-t" id="hiddenLetters">t</div>
+            <div class = "letter-y" id="hiddenLetters">y</div>
+            <!--Added hiddenLetters ID to reset all letters at the same time-->
+            
+           
         </div>
-
+   
+        
     
     <div class = "staging-area">
         <div class="rocket">
-            <div class = "base"></div>
+            <div class = "blast" id="flame"></div>
+            <div class = "blast" id="fire"></div>
             <div class = "mainBody"></div>
             <div class = "left-fin"></div>
             <div class = "right-fin"></div>
             <div class = "engine"></div>
             <div class = "nose"></div>
 
-
         </div>
+        
     </div>
 
-
-
+    <div class = "options">
+        <button id ="resetButton">Reset</button>
+        <div id ="message-l">Sorry you lose! Try again?</div>
+    </div>
 
 </div> <!-- End of container-->
+   
+
+
+ 
     
     
       

@@ -1,86 +1,108 @@
-body {
-    background-color: rgb(154, 187, 154);
-}
+
 
 /*Setting up grid*/
 .Container {
-    background-color: rgb(123, 224, 224);
+    background: linear-gradient(to right, rgb(122, 137, 126), rgb(112, 92, 92));
+    /* background-color: rgb(123, 224, 224); */
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: auto;
+    grid-template-areas:
+    "library staging staging staging"
+    "library staging staging staging"
+    "options hiddenWord hiddenWord hiddenWord"
+    ;
+    /* grid-template-columns: 1fr 2fr; */
+    /* grid-template-rows: auto; */
+    height: 100vh;
 
 }
 
 /*Organizing elements within grid*/
-.staging-area {
-    background-color: rgb(200, 99, 99);
 
-    grid-column: 2;
-    grid-row: 1;
-    border: solid rgb(176, 157, 15);
-    height: 400px;
+.options {
+    grid-area: options;
+}
+
+.staging-area {
+    grid-area: staging;
+    /* grid-column: 2;
+    grid-row: 1; */
 }
 .hiddenWord {
     background-color: rgb(200, 170, 99); 
 
-    grid-column: 2;
-    grid-row: 2;
+    grid-area: hiddenWord;
+    /* grid-column: 2;
+    grid-row: 2; */
     border: solid black;  
 }
 
 .Library { /*The container called Library holding all the buttons*/
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
 
-    grid-column: 1;
-    grid-row: 1 / span 2;
+    grid-area: library; /*Organizing container*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    /* grid-column: 1;
+    grid-row: 1 / span 2; */
+    
 }
 
 
 /* All buttons*/
 .letter {
-      padding: 10px;
-      gap: 5px;
+    background-color: rgb(128, 170, 207);
+    display: flex;
+    align-items: center;
+    
+    padding: 10px;
+     
       cursor: pointer;
       
+       height: 60px; 
+      font-size: 15px;
+      margin: 2px;
+      border: solid rgb(106, 106, 101);
+    
       
     }
     
 /* Each letter button found in the library*/
    #button-a {
-    background-color: aqua;
+    justify-content: center;
    } 
    #button-b {
-    background-color: aqua;
+    justify-content: center;
    } 
    #button-g {
-    background-color: aqua;
+    justify-content: center;
    } 
    #button-e {
-    background-color: aqua;
+    justify-content: center;
    }
    #button-r {
-    background-color: aqua;
+    justify-content: center;
    }
    #button-v {
-    background-color: aqua;
+    justify-content: center;
    }
    #button-f {
-    background-color: aqua;
+    justify-content: center;
    }
    #button-i {
-    background-color: aqua;
+    justify-content: center;
    }
    #button-h {
-    background-color: aqua;
+    justify-content: center;
    }
    #button-t {
-    background-color: aqua;
+    justify-content: center;
    }
    #button-k {
-    background-color: aqua;
+    justify-content: center;
    }
    #button-y {
-    background-color: aqua;
+    justify-content: center;
    }
 
 /* Hidden word*/
@@ -89,7 +111,7 @@ body {
         grid-template-areas: 
         "letter-g letter-r letter-a letter-v letter-i letter-t letter-y";
         width: auto;
-        height: 40px;
+        height: 55px;
         /* Positioning outside the container
         position:fixed;
         bottom: 25px;
@@ -97,8 +119,9 @@ body {
         */
         gap: 5px;
         color: white;
-        font-size: 25px;
+        font-size: 35px;
         text-align: center;
+        border: solid rgb(106, 106, 101);
 
     }
     
@@ -144,16 +167,161 @@ body {
         border-style: outset;
         visibility: hidden
     }
+   
+/* Staging Area container that holds the rocket */
+
+.staging-area {
     
+    border: solid rgb(106, 106, 101);
+    position: relative
+    
+}
 /*Pieces of the rocket*/
 
-.mainBody {
+/* .blast {
+
     
-    position: relative;
-    width: 75px;
-    height: 200px;
-    top: 80px;
-    left: 295px;
+    position:fixed;
+    width: 250px;
+    height: 10px;
+    bottom: 500px;
+    right: 200px ;
+    
+    
+    background: rgb(69, 64, 62); 
+  } */
+ .blast {
+    visibility: hidden
+ }
+  #flame {
+    width: 0; 
+    height: 0; 
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    
+    border-top: 75px solid rgb(225, 17, 14);
+    
+    position: fixed;
+    bottom: 540px;
+    right: 274px;
+    z-index: 1;
+    
+}
+#fire {
+    width: 0; 
+    height: 0; 
+    border-left: 65px solid transparent;
+    border-right: 65px solid transparent;
+    
+    border-top: 90px solid rgb(199, 110, 14);
+ 
+    position: fixed;
+    bottom: 520px;
+    right: 247px;
+    
+}
+
+
+.mainBody {
+    position: fixed;
+    width: 125px;
+    height: 350px;
+    bottom: 600px;
+    right: 250px;
     background: linear-gradient(to right, rgb(48, 46, 41), rgb(112, 92, 92));
-      
+   
+   z-index: 1;
+   visibility: hidden
+}
+.nose {
+    width: 0; 
+    height: 0; 
+    border-left: 65px solid transparent;
+    border-right: 65px solid transparent;
+    
+    border-bottom: 90px solid rgb(22, 70, 89);
+    
+    position: fixed;
+    bottom: 950px;
+    right: 247px;
+    visibility: hidden
+}
+.engine {
+    position: fixed;
+    width: 125px;
+    height: 70px;
+    bottom: 600px;
+    right: 250px;
+    background: linear-gradient(to right, rgb(48, 46, 41), rgb(61, 54, 15));
+   
+   z-index: 1;
+   visibility: hidden
+}
+
+.left-fin {
+    width: 0; 
+    height: 0; 
+    border-left: 40px solid transparent;
+    border-right: 20px solid transparent;
+    
+    border-bottom: 170px solid rgb(22, 70, 89);
+    
+    position: fixed;
+    bottom: 600px;
+    right: 355px;
+    visibility: hidden
+
+}
+
+.right-fin {
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 48px solid transparent;
+    
+    border-bottom: 170px solid rgb(22, 70, 89);
+    
+    position: fixed;
+    bottom: 600px;
+    right: 202px;
+    visibility: hidden
+}
+
+
+/* Organizing buttons and message under the options class */
+.options {
+    display: grid;
+    grid-template-areas:
+    "reset "
+    "lmessage"
+
+    ;
+}
+#resetButton {
+    grid-area: reset;
+    cursor: pointer;
+    border-style: outset;
+    /* position: fixed; */
+    /* right: 600px;
+    bottom: 290px; */
+    height: 70px;
+    width: 130px;
+    font-size: 25px;
+   
+}
+
+#message-l {
+    grid-area: lmessage;
+    visibility: hidden;
+    /* position: fixed; */
+    /* right: 450px ;
+    bottom: 290px; */
+    color: rgb(241, 237, 237);
+    background-color: rgb(223, 13, 51);
+    height: 120px;
+    width: 150px;
+    font-size: 30px;
+    text-align: center;
+    
+
 }
