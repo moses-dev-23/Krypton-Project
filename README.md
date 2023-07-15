@@ -1,6 +1,6 @@
 
 # Name of Project: Krypton
-Jor-el is working tirelessly to save his home planet of Krypton. He is one word away from figuring out the final piece of the puzzle to stabilize the planet’s core. Can you help Jor-el save his planet or will he be forced to ship his son Kal-el off into the cosmos to safety.
+Jor-el is- working tirelessly to save his home planet of Krypton. He is one word away from figuring out the final piece of the puzzle to stabilize the planet’s core. Can you help Jor-el save his planet or will he be forced to ship his son Kal-el off into the cosmos to safety.
 
 Krypton is a game where the user is provided with a string of blank spaces that represents a hidden word. A library of letters is provided to the left of the screen and the user is required to select one of these letters in an attempt to fill in the hidden word. With each correct letter selected, the user gets closer to finishing the hidden word, but with each incorrect answer selected, a piece of the spaceship gets added. If all the ship pieces are assembled before the hidden word is filled out, then the user loses the game. 
 
