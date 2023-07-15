@@ -29,11 +29,11 @@ const kButton = document.querySelector("#button-k");
 const yButton = document.querySelector("#button-y");
 
 // DOM: Rocket pieces in staging area
-const rocket1 = document.querySelector(".engine");
-const rocket2 = document.querySelector(".mainBody");
-const rocket3 = document.querySelector(".left-fin");
-const rocket4 = document.querySelector(".right-fin");
-const rocket5 = document.querySelector(".nose");
+const rocket1 = document.querySelector("#engine");
+const rocket2 = document.querySelector("#mainBody");
+const rocket3 = document.querySelector("#left-fin");
+const rocket4 = document.querySelector("#right-fin");
+const rocket5 = document.querySelector("#nose");
 const rocket6 = document.querySelector("#fire");
 const rocket7 = document.querySelector("#flame");
 
@@ -90,39 +90,41 @@ function handleClick(event) {
 function compareLetters(sLetters, hWord) {
   for (let i = 0; i < hWord.length; i++) {
     if (sLetters.includes(hWord[i])) {
-        const letter = hWord[i];
-        const letterStyle = document.querySelector(`#letter-${letter}`);
-        const button = document.querySelector(`#button-${letter}`);
+        // const letter = hWord[i];
+        // const letterStyle = document.querySelector(`#letter-${letter}`);
+        // const button = document.querySelector(`#button-${letter}`);
         
-        letterStyle.style.visibility = "visible";
-        button.setAttribute("disabled", "");
+        // letterStyle.style.visibility = "visible";
+        // button.setAttribute("disabled", "");
 
-       console.log(button);
+      
         
      
-// Different output for each correct matched letter
-    //   if (sLetters[i] === "g") {
-    //     gStyle.style.visibility = "visible";
-    //     gButton.setAttribute("disabled", "");
-    //   } else if (sLetters[i] === "r") {
-    //     rStyle.style.visibility = "visible";
-    //     rButton.setAttribute("disabled", "");
-    //   } else if (sLetters[i] === "a") {
-    //     aStyle.style.visibility = "visible";
-    //     aButton.setAttribute("disabled", "");
-    //   } else if (sLetters[i] === "v") {
-    //     vStyle.style.visibility = "visible";
-    //     vButton.setAttribute("disabled", "");
-    //   } else if (sLetters[i] === "i") {
-    //     iStyle.style.visibility = "visible";
-    //     iButton.setAttribute("disabled", "");
-    //   } else if (sLetters[i] === "t") {
-    //     tStyle.style.visibility = "visible";
-    //     tButton.setAttribute("disabled", "");
-    //   } else if (sLetters[i] === "y") {
-    //     yStyle.style.visibility = "visible";
-    //     yButton.setAttribute("disabled", "");
-    //   }
+//Different output for each correct matched letter
+      if (sLetters[i] === "g") {
+        gStyle.style.visibility = "visible";
+        gButton.setAttribute("disabled", "");
+      } else if (sLetters[i] === "r") {
+        rStyle.style.visibility = "visible";
+        rButton.setAttribute("disabled", "");
+      } else if (sLetters[i] === "a") {
+        aStyle.style.visibility = "visible";
+        aButton.setAttribute("disabled", "");
+      } else if (sLetters[i] === "v") {
+        vStyle.style.visibility = "visible";
+        vButton.setAttribute("disabled", "");
+      } else if (sLetters[i] === "i") {
+        iStyle.style.visibility = "visible";
+        iButton.setAttribute("disabled", "");
+      } else if (sLetters[i] === "t") {
+        tStyle.style.visibility = "visible";
+        tButton.setAttribute("disabled", "");
+      } else if (sLetters[i] === "y") {
+        yStyle.style.visibility = "visible";
+        yButton.setAttribute("disabled", "");
+      }
+
+
 // Checking if the correct letters array includes the current correct selected letter.
 
           if (!correctLetters.includes(sLetters[i])) {
@@ -143,20 +145,19 @@ function compareLetters(sLetters, hWord) {
       rocketPiece.style.visibility = "visible";
 
       incorrectCount++;
-      console.log("incorrect letters",incorrectCount);
+      console.log("incorrect letters",incorrectCount); 
       
-        // Display lose message when the incorrect count is the same as the length of the rocketPieces array
-      if (incorrectCount === rocketPieces.length) {
-        lMessage.style.visibility = "visible";      
-      }
-    }
-// Check if all letters have been correctly guessed to trigger the win message.
-        if (correctLetters.length === hWord.length) {
-            wMessage.style.visibility = "visible";
+      // Loss Message -  Display lose message when the incorrect count is the same as the length of the rocketPieces array
+     if (incorrectCount === rocketPieces.length) {
+         lMessage.style.visibility = "visible";
         }
+    }
+// Win Message - Check if all letters have been correctly guessed
+if (correctLetters.length === hWord.length) {
+    wMessage.style.visibility = "visible";
+}
 
   }
-
 } // End of function
 
 

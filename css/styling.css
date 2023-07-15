@@ -214,7 +214,11 @@ body {
     
 }
 /*Pieces of the rocket*/
-
+.rocket {
+    position: relative;
+    right: 50%;
+    bottom: 20%;
+}
  
   #flame {
     width: 0; 
@@ -225,8 +229,8 @@ body {
     border-top: 75px solid rgb(225, 17, 14);
     
     position: absolute;
-    bottom: 540px;
-    right: 274px;
+    bottom: 21%;
+    right: 51.6%;
     z-index: 1;
     visibility: hidden;
     
@@ -239,26 +243,26 @@ body {
     
     border-top: 90px solid rgb(199, 110, 14);
  
-    position: fixed;
-    bottom: 520px;
-    right: 247px;
+    position: absolute;
+    bottom: 20%;
+    right: 50%;
     
     visibility: hidden;
 }
 
 
-.mainBody {
-    position: fixed;
+#mainBody {
+    position: absolute;
     width: 125px;
     height: 350px;
-    bottom: 600px;
-    right: 250px;
+    bottom: 28%;
+    right: 50.1%;
     background: linear-gradient(to right, rgb(48, 46, 41), rgb(112, 92, 92));
    
    z-index: 1;
-   visibility: hidden
+   visibility: hidden;
 }
-.nose {
+#nose {
     width: 0; 
     height: 0; 
     border-left: 65px solid transparent;
@@ -266,24 +270,24 @@ body {
     
     border-bottom: 90px solid rgb(22, 70, 89);
     
-    position: fixed;
-    bottom: 950px;
-    right: 247px;
-    visibility: hidden
+    position: absolute;
+    bottom: 60.5%;
+    right: 50.1%;
+    visibility: hidden;
 }
-.engine {
-    position: fixed;
+#engine {
+    position: absolute;
     width: 125px;
     height: 70px;
-    bottom: 600px;
-    right: 250px;
+    bottom: 28%;
+    right: 50.1%;
     background: linear-gradient(to right, rgb(48, 46, 41), rgb(61, 54, 15));
    
    z-index: 1;
-   visibility: hidden
+   visibility: hidden;
 }
 
-.left-fin {
+#left-fin {
     width: 0; 
     height: 0; 
     border-left: 40px solid transparent;
@@ -291,14 +295,14 @@ body {
     
     border-bottom: 170px solid rgb(22, 70, 89);
     
-    position: fixed;
-    bottom: 600px;
-    right: 355px;
-    visibility: hidden
+    position: absolute;
+    bottom: 28%;
+    right: 56.5%;
+    visibility: hidden;
 
 }
 
-.right-fin {
+#right-fin {
     width: 0; 
     height: 0; 
     border-left: 20px solid transparent;
@@ -306,10 +310,10 @@ body {
     
     border-bottom: 170px solid rgb(22, 70, 89);
     
-    position: fixed;
-    bottom: 600px;
-    right: 202px;
-    visibility: hidden
+    position: absolute;
+    bottom: 28%;
+    right: 47.2%;
+    visibility: hidden;
 }
 
 
