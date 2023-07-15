@@ -33,4 +33,8 @@ Krypton is a game where the user is provided with a string of blank spaces that 
 - AAU I would like to see how many incorrect answers are left.
 - AAU I would like to hear a sound when a selection is made for both correct and incorrect answers
 - AAU I would like to see an animation for the ship blasting off.
+<<<<<<< HEAD
 - AAU I would like to see an animation every time I get a correct answer.
+=======
+- AAU I would like to see an animation every time I get a correct answer.
+>>>>>>> edcdce1c4887c7bbc1b037ca65efbba79c2c26ce
