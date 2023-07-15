@@ -172,34 +172,37 @@ function handleReset() {
       rocketPieces[i].style.visibility = "hidden";
     }
   
-    // Reset buttons
-    const buttons = document.querySelectorAll(".letter");
-    buttons.forEach((button) => {
-      button.removeAttribute("disabled");
-      button.style.backgroundColor = "rgb(128, 170, 207)";
-    });
-  
-    // Reset hidden word
-    const hiddenCorrectWord = document.querySelectorAll(".hiddenLetters");
-    hiddenCorrectWord.forEach((hiddenLetter) => {
-      hiddenLetter.style.visibility = "hidden";
-    });
 
-    //Resetting loss message
-    lMessage.style.visibility = "hidden";
-
-    //Resetting win message
-    wMessage.style.visibility = "hidden";
+    location.reload()
+}
+    // // Reset buttons
+    // const buttons = document.querySelectorAll(".letter");
+    // buttons.forEach((button) => {
+    //   button.removeAttribute("disabled");
+    //   button.style.backgroundColor = "rgb(128, 170, 207)";
+    // });
   
-    // Reset selected letters array
-    selectedLetters = [];
-  
-    // Reset incorrect count
-    incorrectCount = 0;
+    // // Reset hidden word
+    // const hiddenCorrectWord = document.querySelectorAll(".hiddenLetters");
+    // hiddenCorrectWord.forEach((hiddenLetter) => {
+    //   hiddenLetter.style.visibility = "hidden";
+    // });
 
-    // //Reset correct count
-    // correctCount = 0;
-  }
+    // //Resetting loss message
+    // lMessage.style.visibility = "hidden";
+
+    // //Resetting win message
+    // wMessage.style.visibility = "hidden";
+  
+    // // Reset selected letters array
+    // selectedLetters = [];
+  
+    // // Reset incorrect count
+    // incorrectCount = 0;
+
+    // // //Reset correct count
+    // // correctCount = 0;
+  
   
 // RESET BUTTON CREATED-------------------
 
