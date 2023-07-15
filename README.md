@@ -13,12 +13,19 @@ Krypton is a game where the user is provided with a string of blank spaces that 
 
 ## Getting Started
 [Krypton Live ](https://moses-dev-23.github.io/Krypton-Project/)
- -User can start the game as soon as the window loads. Your aim is to guess the hidden word that will populate in the bottom right shaded area of the screen. The first step would be to click one of the letters in the library located to the left of the screen. When a correct letter is selected, one of thhe hidden letters will be displayed. However when an incorrect letter is selected, a spaceship piece will be assembled. If you are able to fill in the hidden word before the spaceship becomes fully assembled, then you win the game, but if the spaceship beecomes assembled before the hidden word is guessed, then you lose the game. At which point you will have the option to select the reset button to try again. 
+
+ User can start the game as soon as the window loads. Your aim is to guess the hidden word that will populate in the bottom right shaded area of the screen. The first step would be to click one of the letters in the library located to the left of the screen. When a correct letter is selected, one of thhe hidden letters will be displayed. However when an incorrect letter is selected, a spaceship piece will be assembled. If you are able to fill in the hidden word before the spaceship becomes fully assembled, then you win the game, but if the spaceship beecomes assembled before the hidden word is guessed, then you lose the game. At which point you will have the option to select the reset button to try again. 
 
 ## Wire Frames
-[Win result] ([/home/mosessb/msb_work/unit1/Project-1/assets/Screenshot 1 - Start.jpg](https://github.com/moses-dev-23/Krypton-Project/blob/main/assets/Screenshot%201%20-%20Start.jpg))
+**Initial Start Screen**
 
+![Initial Start Screen](https://github.com/moses-dev-23/Krypton-Project/blob/main/assets/Screenshot%201%20-%20Start.jpg)
 
+**Win Result**
+![Win Result](https://github.com/moses-dev-23/Krypton-Project/blob/main/assets/Screenshot%202%20-%20win.jpg)
+
+**Loss Result**
+![Loss Result](https://github.com/moses-dev-23/Krypton-Project/blob/main/assets/Screenshot%202%20-%20lose.jpg)
 
 ## Next Steps: Planned future enahancements
 - AAU I would like to have a category of words to choose from.
