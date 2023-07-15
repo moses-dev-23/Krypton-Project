@@ -11,7 +11,14 @@
 
 <div class="Container">
     
+    <div class = "title" id = "krypton"> KRYPTON</div>
+    <div class = "title" id = "instructions"> Jor-el is working tirelessly to save Krypton. He is one word away from figuring out why the core of the planet is unstable and he needs you. <p> Select from the library of words below to guess the hidden word. </p> Be careful though. Each incorrect answer adds a piece to the spaceship which Jor-el will be forced to use if he does not save Krypton. 
+    </div>
+
+
     
+
+        <!-- Library of buttons -->
      <div class="Library">   
                 <button class="letter" id="button-a">a</button>
                 <button class="letter" id="button-b">b</button>
@@ -25,27 +32,35 @@
                 <button class="letter" id="button-t">t</button>
                 <button class="letter" id="button-k">k</button>
                 <button class="letter" id="button-y">y</button>
-                
-                
-                
-
+                <button class="letter" id="button-c">c</button>
+                <button class="letter" id="button-d">d</button>
+                <button class="letter" id="button-j">j</button>
+                <button class="letter" id="button-l">l</button>
+                <button class="letter" id="button-m">m</button>
+                <button class="letter" id="button-n">n</button>
+                <button class="letter" id="button-x">x</button>
+                <button class="letter" id="button-o">o</button>
+                <button class="letter" id="button-p">p</button>
+                <button class="letter" id="button-q">q</button>
+                <button class="letter" id="button-s">s</button>
+                <button class="letter" id="button-u">u</button>
+                <button class="letter" id="button-w">w</button>
+                <button class="letter" id="button-z">z</button>
     </div>
-    
+        
+        <!-- Hidden Word -->
         <div class="hiddenWord"> 
-            <div class = "letter-g" id="hiddenLetters">g</div>
-            <div class = "letter-r" id="hiddenLetters">r</div>
-            <div class = "letter-a" id="hiddenLetters">a</div>
-            <div class = "letter-v" id="hiddenLetters">v</div>
-            <div class = "letter-i" id="hiddenLetters">i</div>
-            <div class = "letter-t" id="hiddenLetters">t</div>
-            <div class = "letter-y" id="hiddenLetters">y</div>
-            <!--Added hiddenLetters ID to reset all letters at the same time-->
-            
-           
+            <div class="hiddenLetters" id = "letter-g" >g</div>
+            <div class="hiddenLetters" id = "letter-r" >r</div>
+            <div class="hiddenLetters" id = "letter-a" >a</div>
+            <div class="hiddenLetters" id = "letter-v" >v</div>
+            <div class="hiddenLetters" id = "letter-i" >i</div>
+            <div class="hiddenLetters" id = "letter-t" >t</div>
+            <div class="hiddenLetters" id = "letter-y" >y</div>
         </div>
    
         
-    
+    <!-- Staging area holding the rocket -->
     <div class = "staging-area">
         <div class="rocket">
             <div class = "blast" id="flame"></div>
@@ -62,8 +77,11 @@
 
     <div class = "options">
         <button id ="resetButton">Reset</button>
-        <div id ="message-l">Sorry you lose! Try again?</div>
+        <div id ="message-l">Sorry, click reset to try again.</div>
+        <div id = "message-w"> Congrats! Krypton is Saved</div>
     </div>
+
+    
 
 </div> <!-- End of container-->
    
